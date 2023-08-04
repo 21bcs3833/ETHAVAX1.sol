@@ -11,10 +11,10 @@ contract mysalary {
         totalmysalaryrecived++;
         hasmysalarygiven[msg.sender] = true;
 
-        if (totalmysalaryrecived > 50) {
+        if (totalmysalaryrecived > 70) {
             revert("employee limit exceeded"); 
         }
 
-        assert(totalmysalaryrecived <= 50); 
+        assert(totalmysalaryrecived <= 70); 
     }
 }
